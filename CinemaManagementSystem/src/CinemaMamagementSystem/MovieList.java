@@ -45,7 +45,7 @@ public class MovieList extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         textFieldDate = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        textFieldDuration = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         textFieldGenre = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -225,7 +225,7 @@ public class MovieList extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(textFieldRating, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(textFieldWebsite, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(textFieldDuration, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(textFieldDirector, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(comboBoxTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(40, 40, 40)))
@@ -277,7 +277,7 @@ public class MovieList extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(textFieldGenre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldDuration, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -322,7 +322,7 @@ public class MovieList extends javax.swing.JFrame {
                 textFieldDirector.setText(rs.getString("director"));
                 textFieldCast.setText(rs.getString("billcast"));
                 textFieldDate.setText(rs.getString("releasedate"));
-                textFieldDirector.setText(rs.getString("duration"));
+                textFieldDuration.setText(rs.getString("duration"));
                 textFieldGenre.setText(rs.getString("genre"));
                 textFieldRating.setText(rs.getString("rating"));
                 textFieldDistributor.setText(rs.getString("distributor"));
@@ -440,7 +440,6 @@ public void setComboBoxTitle() {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem openMenuItem;
     private javax.swing.JMenuItem pasteMenuItem;
@@ -451,6 +450,7 @@ public void setComboBoxTitle() {
     private javax.swing.JTextField textFieldDate;
     private javax.swing.JTextField textFieldDirector;
     private javax.swing.JTextField textFieldDistributor;
+    private javax.swing.JTextField textFieldDuration;
     private javax.swing.JTextField textFieldGenre;
     private javax.swing.JTextField textFieldRating;
     private javax.swing.JTextField textFieldWebsite;
