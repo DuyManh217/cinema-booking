@@ -79,7 +79,7 @@ public class ScheduleSession extends javax.swing.JFrame {
             }
         });
 
-        textFieldDate.setToolTipText("DD/MM/YYYY");
+        textFieldDate.setToolTipText("YYYY-MM-DD");
         textFieldDate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 textFieldDateActionPerformed(evt);
